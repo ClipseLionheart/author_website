@@ -1,0 +1,985 @@
+/*CSS*/
+/*index header styling*/
+.wrapperH {
+    margin-top:1%;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 1%;
+}
+
+.boxH {
+    height: 100%;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+.div1H {
+    float: left;
+    background-color:#ff93c4;
+    opacity:74%;
+    border-radius:10px;
+    width:60%;
+}
+
+.div1H .text {
+    text-align:center;
+    margin-top:20%;
+    color:#340758;
+    font-family:"Playfair Display", sans-serif;
+}
+
+.div1H .text h1 {
+    font-size:50px;
+}
+
+.div1H .text h3 {
+    font-style:italic;
+}
+
+.div2H /*image*/ {
+    float: right;
+    border-radius:10px;
+    background-image:url(images/Garden_Dreaming.png);
+    background-size:auto; 
+
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+
+    width:35%;
+    height: 100%;
+}
+
+.center {
+    padding: 70px 0;
+    text-align: center;
+}
+
+/*div normal styling*/
+.wrapper {
+    margin-top:1%;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 4%;
+}
+
+.box {
+    height: 100%;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+.div1 {
+    float: left;
+    background-color:#f8f5ef;
+    opacity:100%;
+    border-radius:10px;
+
+    width:60%;
+    height:100%;
+}
+
+.div1 .text {
+    color:#340758;
+    margin:2%;
+}
+
+.div1 .text h1 {
+    font-family:'Ring Matrix', Geneva; /*pixel title*/
+    font-size:30px;
+    text-align: left;
+}
+
+.div1 .text p {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+}
+
+.div2 /*image*/ {
+    float: right;
+    border-radius:10px;
+    background-image:url(images/Garden_Dreaming.png);
+    background-size:auto; 
+
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+
+    width:35%;
+    height: 100%;
+}
+
+
+/*div normal styling*/
+.wrapper3 {
+    margin-top:1%;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 4%;
+}
+
+.box3 {
+    height: 100%;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+.div3 {
+    float: left;
+    background-color:#f8f5ef;
+    opacity:100%;
+    border-radius:10px;
+
+    width:35%;
+    height:100%;
+}
+
+.div3 .text {
+    color:#340758;
+    margin:2%;
+}
+
+.div3 .text h1 {
+    font-family:'Ring Matrix', Geneva;
+    font-size:30px;
+    text-align: left;
+}
+
+.div3 .text p {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+}
+
+.div4 /*video here*/ {
+    float: right;
+    border-radius:10px;
+    background-size:auto; 
+
+    background-position:bottom;
+    background-size:cover;
+
+    width:60%;
+    height: 100%;
+}
+
+.div4 iframe {
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+/*div normal styling*/
+.wrapper5 {
+    margin-top:1%;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 4%;
+}
+
+.box5 {
+    height: 100%;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+.div5 {
+    float: left;
+    border-radius:10px;
+    background-size:auto; 
+
+    background-image: url(images/fairy_gif.gif);
+    background-position:80%;
+    background-size:cover;
+
+    width:60%;
+    height: 100%;
+}
+
+/*text opening elements*/
+.div6 .text {
+    color:#340758;
+    margin:2%;
+}
+
+.div6 .text h1 {
+    font-family:'Ring Matrix', Geneva;
+    font-size:30px;
+    text-align: left;
+}
+
+#buy {
+    font-family:'Ring Matrix', Geneva;
+    font-size:30px;
+    text-align: left;
+    color:#ff2689;
+}
+
+#buy:hover {
+    color:#ff93c4;
+}
+
+.div6 .text p {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+}
+
+
+.div6 /*image*/ {
+    float: right;
+    background-color:#f8f5ef;
+    opacity:100%;
+    border-radius:10px;
+
+    width:35%;
+    height:150%;
+}
+
+.divSM /*social media*/ {
+    float: right;
+    background-color:#f8f5ef;
+    opacity:100%;
+    border-radius:10px;
+
+    width:35%;
+    height:115%;
+}
+
+
+.divSMI {
+    float: left;
+    border-radius:10px;
+    background-size:auto; 
+
+    background-image: url(images/Garden_Dreaming.png);
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+
+    width:60%;
+    height: 115%;
+}
+
+
+.div6 .text p {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+}
+
+/*pages - show pages / display*/
+h1 {
+    font-family: 'Solway', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#340758;
+}
+
+.wrapper2 {
+    margin-top:1%;
+    width: 100%;
+    height:200px;
+    margin-bottom: 1%;
+
+    /*centers eleements*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    /*transitions both ways if hover is removed*/
+    transition: width 0.2s, height 0.2s;
+
+    /*dimensions*/
+    height: 100%;
+    margin-left:1%;
+    margin-right:1%;
+        
+    /*font and tetx styling*/
+    color: #f8f5ef;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+    background-color:#45306b;
+    text-align: center;
+    font-family:'Handjet', Arial, Helvetica, sans-serif;
+    font-size: 27px;
+}
+
+.box2 .text {
+    transition: width 0.2s, height 0.2s;
+    margin-top: 20%;
+}
+
+.box2:hover {
+    height:110%;
+    width:110%;
+
+    background-position:70%;
+
+    /*smooths out size change*/
+    transition: width 0.5s, height 0.5s;
+}
+
+.box2:hover .text {
+    transition: 0.5s;
+    opacity:0%;
+}
+
+.page1 {
+    float: left;
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/mainPimg.png);
+    background-size:auto; 
+
+    background-position:right;
+    background-size:cover;
+}
+
+.page2 {
+    float: left;
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/mainUimg.jpeg);
+    background-size:auto; 
+
+    background-position:bottom;
+    background-size:cover;
+}
+
+
+/**unused pages**/
+.page3 {
+    float: left;
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/computer.png);
+    background-size:auto; 
+
+    background-position:bottom;
+    background-size:cover;
+}
+
+.page4 {
+    float: left;
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/projects.png);
+    background-size:auto; 
+
+    background-position:bottom;
+    background-size:cover;
+}
+
+.page5 {
+    float: left;
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/rst.png);
+    background-size:auto; 
+
+    background-position:bottom;
+    background-size:cover;
+}
+
+.page6 {
+    float: left;
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/floating_pink.png);
+    background-size:auto; 
+
+    background-position:bottom;
+    background-size:cover;
+}
+
+/*other pages styling*/
+.wrapperA {
+    clear: both;
+    margin: 16px auto;
+    width: 100%;
+}
+
+.divA1 {
+    border-radius: 20px;
+
+    background-color: #c6fff5;
+    opacity: 100%;
+    width: 100%;
+    height:280px;
+    margin-bottom: 16px;
+}
+
+.divA1 .text {
+    text-align: center;
+    color: #340758;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.divA1 .text h1 {
+    font-size: 50px;
+}
+
+.divA2 {
+    border-radius: 20px;
+
+    background-image: url(images/eyes.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 240px;
+}
+
+/*image for about me overview*/
+.divO {
+    float: right;
+    border-radius:10px;
+    background-size:auto; 
+    background-image: url(images/radio.png);
+    background-attachment: fixed;
+
+    background-position:center;
+    background-size:cover;
+
+    width:60%;
+    height: 100%;
+}
+
+/*image for about me hobbies*/
+/*pirates*/
+.divHO {
+    float: left;
+    border-radius:10px;
+    background-size:auto; 
+
+    background-attachment: fixed;
+    background-image: url(images/piratescover.png);
+    
+    background-position:center;
+    background-size:cover;
+
+    width:60%;
+    height: 150%;
+}
+
+.divR {
+    border-radius: 20px;
+
+    background-image: url(images/piratescover.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 240px;
+}
+
+/*unfathomable*/
+.divHOU {
+    float: left;
+    border-radius:10px;
+    background-size:auto; 
+
+    background-attachment: fixed;
+    background-image: url(images/1stmeeting.gif);
+    
+    background-position:50%;
+    background-size:cover;
+
+    width:60%;
+    height: 150%;
+}
+
+.divRU {
+    border-radius: 20px;
+
+    background-image: url(images/1stmeeting.gif);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 240px;
+}
+
+/*normal / centered text - div no img accompanies*/
+.centertxt {
+    background-color: #f8f5ef;
+    border-radius: 10px;
+    color: #340758;
+    text-align:center;
+
+    max-width: 1000px;
+    width: 90%;        
+    margin: 32px auto; 
+    padding: 32px;      
+    clear: both;       
+}
+
+.centertxt h1 {
+    font-family:'Ring Matrix', Geneva;
+    font-size:40px;
+    text-align:center;
+}
+
+.centertext h2 {
+    font-family:'Ring Matrix', Geneva;
+    font-size:40px;
+}
+
+.centertxt h3 {
+    font-family: 'Solway', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.centertxt p {
+    font-size:27px;
+    font-family: 'Handjet', Geneva;
+}
+
+/*equal distance / width */
+.wrapperE {
+    clear: both;
+    margin: 16px auto;
+    width: 92%;
+    height:250px;
+}
+
+.divE1 {
+    float:left;
+    background-color:#f8f5ef;
+    opacity:100%;
+    border-radius:10px;
+
+    width:43%;
+    height:100%;
+    margin: 32px auto; 
+    padding: 32px;     
+}
+
+.divE1 h1 {
+    font-family:'Ring Matrix', Geneva;
+    font-size:30px;
+    text-align: left;
+}
+
+.divE1 a {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+    color:#ff2689;
+}
+
+.divE2 {
+    float:right;
+    background-color:#f8f5ef;
+    opacity:100%;
+    border-radius:10px;
+
+    width:43%;
+    height:100%;
+    margin: 32px auto; 
+    padding: 32px;      
+}
+
+
+.divE2 h1 {
+    font-family:'Ring Matrix', Geneva;
+    font-size:30px;
+    text-align: left;
+}
+
+.divE2 li {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+    color:#340758;
+}
+
+/*table styling*/
+
+.smalltable {
+    width:65%;
+}
+
+
+th {
+    font-family:'Ring Matrix', Geneva; /*pixel title*/
+    font-size:22px;
+}
+
+table {
+    color:#340758;
+    width:84%;
+    border: 3px solid #ff93c4;
+    background-color: #f8f5ef;
+}
+
+table, th, td {
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px;
+    text-align:center;
+}
+
+table a:hover {
+    color:#340758;
+}
+
+th, td {
+    padding:16px;
+    font-family:'Solway', Arial, Helvetica, sans-serif;
+}
+
+tr:hover {
+    background-color:#ff93c4;
+    color: #f8f5ef;
+}
+
+tr:hover a:hover {
+    color: #c6fff5;
+}
+
+td {
+    width: max-content;
+    padding:18px;
+}
+
+video {
+    width:100%;
+    height:auto; 
+}
+
+/*list*/
+
+.wrapperLi {
+    margin-top:1%;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 4%;
+}
+
+.div3 .text li {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+    color:#340758;
+}
+
+/*summative image*/
+.divSum {
+    float: right;
+    border-radius:10px;
+    background-size:auto; 
+    background-image: url(images/flower.png);
+    background-attachment: fixed;
+
+    background-position:top;
+    background-size:cover;
+
+    width:60%;
+    height: 100%;
+}
+
+/*rst image*/
+.divRST {
+    border-radius: 20px;
+
+    background-image: url(images/bike.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    width: 100%;
+    height: 240px;
+}
+
+.container {
+    border-radius: 10px;
+    width:95%;
+    padding:12px;
+}
+
+
+img {
+    border-radius: 15px;
+}
+
+table img {
+    object-fit: cover;
+    object-position: top;
+    width:300px;
+    height:300px;
+}
+
+table img:active {
+    object-fit: cover;
+    object-position: top;
+    width:600px;
+    height:700px;
+}
+
+h2 {
+    font-family:'Ring Matrix', Geneva; /*pixel title*/
+    font-size:30px;
+    text-align: left;
+    padding-left:32px;
+    color:#340758;
+}
+
+.h2center {
+    text-align:center;
+}
+
+.left {
+    text-align:left;
+}
+
+h3 {
+    font-family: 'Solway', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left:32px;
+}
+
+p {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+    padding-left:32px;
+}
+
+li {
+    font-size:22px;
+    font-family: 'Handjet', Geneva;
+    color:#340758;
+}
+
+
+/*general / for all*/
+
+body {
+    background-image: linear-gradient(#d1b9ff, #c6fff5);
+}
+
+a {
+    transition: all 0.2s;
+    color:#ff2689;
+    font-family: 'Handjet', Arial, Helvetica, sans-serif;
+    font-size:25px;
+    padding:18px;
+    text-align:center;
+    text-decoration: underline;
+}
+
+a:hover {
+    transition: all 0.2s;
+    color:#ff93c4;
+    font-size:27px;
+}
+
+.divPhone {
+    float: right;
+    border-radius:10px;
+    background-size:auto; 
+    background-image: url(images/cellphone.png);
+    background-attachment: fixed;
+
+    background-position:top;
+    background-size:cover;
+
+    width:60%;
+    height: 100%;
+}
+
+/*cse*/
+.wrapperCse {
+    margin-top:1%;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 4%;
+}
+
+.divCse {
+    float: right;
+    border-radius:10px;
+    background-size:auto; 
+    background-image: url(images/bubbly.png);
+    background-attachment: fixed;
+
+    background-position:center;
+    background-size:cover;
+
+    width:60%;
+    height: 100%;
+}
+
+.smallimg {
+    width:100%;
+    height:100%;
+}
+
+#fun {
+    font-size:25px;
+}
+
+/*personal projects*/
+
+.wrapperPersonal {
+    margin-top:1%;
+    width: 100%;
+    height:200px;
+    margin-bottom: 1%;
+
+    /*centers eleements*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxPersonal {
+    /*transitions both ways if hover is removed*/
+    transition: width 0.2s, height 0.2s;
+
+    /*dimensions*/
+    height: 100%;
+    margin-left:1%;
+    margin-right:1%;
+        
+    /*font and tetx styling*/
+    color: #f8f5ef;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+    background-color:#45306b;
+    text-align: center;
+    font-family:'Handjet', Arial, Helvetica, sans-serif;
+    font-size: 27px;
+}
+
+.boxPersonal .text {
+    transition: width 0.2s, height 0.2s;
+}
+
+.boxPersonal:hover {
+    height:110%;
+    width:110%;
+
+    background-position:70%;
+
+    /*smooths out size change*/
+    transition: width 0.5s, height 0.5s;
+}
+
+.boxPersonal:hover .text {
+    transition: 0.5s;
+    opacity:0%;
+}
+
+.wrapperPersonal:hover p {
+    transition: 0.5s;
+    opacity:0%;
+}
+
+.pirates {
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/darkcover.png);
+    background-size:auto; 
+
+    background-position:center;
+    background-size:cover;
+}
+
+.glory_gore {
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/g_gdark.png);
+    background-size:auto; 
+
+    background-position:bottom;
+    background-size:cover;
+}
+
+.daphne {
+    opacity:100%;
+    border-radius:10px;
+
+    width:30%;
+
+    /*image*/
+    background-image:url(images/daphnedark.png);
+    background-size:auto; 
+
+    background-position:center;
+    background-size:cover;
+}
+
+
+video {
+    width:100%;
+    height:auto; 
+}
+
+#square {
+    width:60%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+}
+
+/*cse header*/
+
+.divCseH {
+    border-radius: 20px;
+
+    background-image: url(images/cityscape.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    width: 100%;
+    height: 240px;
+}
+
+.divDreamH {
+    border-radius: 20px;
+
+    background-image: url(images/dream.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 240px;
+}
+
+.divPersonalH {
+    border-radius: 20px;
+
+    background-image: url(images/smthfun.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 240px;
+}
