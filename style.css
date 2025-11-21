@@ -983,3 +983,141 @@ video {
     width: 100%;
     height: 240px;
 }
+
+/* ---------------------------- */
+/*   MOBILE RESPONSIVE FIXES    */
+/* ---------------------------- */
+
+@media (max-width: 768px) {
+
+    /* Remove all floats and stack items */
+    .div1H, .div2H,
+    .div1, .div2,
+    .div3, .div4,
+    .div5, .div6,
+    .divSM, .divSMI,
+    .divHO, .divHOU,
+    .divO, .divSum, .divCse,
+    .divPhone {
+        float: none !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 16px;
+    }
+
+    /* Remove fixed heights from wrappers */
+    .wrapper, .wrapperH, .wrapper3, .wrapper5, .wrapperLi,
+    .wrapperA, .wrapperE, .wrapperCse,
+    .wrapperPersonal, .wrapper2 {
+        height: auto !important;
+        display: block !important;
+    }
+
+    /* Header text spacing */
+    .div1H .text,
+    .divA1 .text {
+        margin-top: 8% !important;
+        padding: 16px;
+    }
+
+    /* Reduce very large titles */
+    .div1H .text h1,
+    .divA1 .text h1 {
+        font-size: 36px !important;
+    }
+
+    /* General heading resizing */
+    h1 {
+        font-size: 32px !important;
+        padding-left: 0 !important;
+    }
+
+    h2 {
+        font-size: 26px !important;
+        padding-left: 0 !important;
+    }
+
+    h3 {
+        padding-left: 0 !important;
+    }
+
+    p, li {
+        font-size: 20px !important;
+        padding-left: 0 !important;
+    }
+
+    /* Fix padding inside text blocks */
+    .text {
+        padding: 16px !important;
+        margin: 0 !important;
+    }
+
+    /* Page cards (Pirates / Novels in Progress) */
+    .wrapper2 {
+        flex-direction: column;
+        height: auto !important;
+        gap: 20px;
+    }
+
+    .box2 {
+        width: 90% !important;
+        height: 180px !important;
+        margin: 8px auto;
+    }
+
+    /* Social media section */
+    .divSM, .divSMI {
+        height: auto !important;
+    }
+
+    /* Artwork Tables: enable scrolling */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table img {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    /* Prevent giant image expansion on tap */
+    table img:active {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    /* Video full width, prevent overflow */
+    video {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Navigation links shrink a bit */
+    a {
+        font-size: 22px !important;
+        padding: 10px !important;
+    }
+
+    a:hover {
+        font-size: 23px !important;
+    }
+
+    /* Centered text blocks */
+    .centertxt {
+        width: 95% !important;
+        padding: 20px !important;
+    }
+
+    .centertxt p {
+        font-size: 22px !important;
+    }
+
+    /* Fix background images on mobile */
+    .div2H, .div2, .divSMI,
+    .divHO, .divHOU, .divR, .divRU {
+        background-attachment: scroll !important;
+        background-position: center !important;
+    }
+}
