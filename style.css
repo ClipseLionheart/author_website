@@ -985,139 +985,120 @@ video {
 }
 
 /* ---------------------------- */
-/*   MOBILE RESPONSIVE FIXES    */
+/*   FULL MOBILE RESPONSIVE FIX */
 /* ---------------------------- */
 
 @media (max-width: 768px) {
 
-    /* Remove all floats and stack items */
+    /* Completely reset floats and column layout */
+    .wrapperH, .wrapper, .wrapper3, .wrapper5,
+    .wrapperLi, .wrapperA, .wrapperE, .wrapperCse,
+    .wrapperPersonal {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
+        margin: 0 auto 24px auto !important;
+    }
+
+    /* Every box becomes full width with auto height */
+    .box, .boxH, .box3, .box5,
     .div1H, .div2H,
     .div1, .div2,
     .div3, .div4,
     .div5, .div6,
     .divSM, .divSMI,
-    .divHO, .divHOU,
-    .divO, .divSum, .divCse,
-    .divPhone {
+    .divO, .divHO, .divHOU,
+    .divSum, .divCse, .divPhone,
+    .divR, .divRU {
         float: none !important;
         width: 100% !important;
         height: auto !important;
-        margin-bottom: 16px;
+        min-height: unset !important;
+        margin: 0 0 18px 0 !important;
     }
 
-    /* Remove fixed heights from wrappers */
-    .wrapper, .wrapperH, .wrapper3, .wrapper5, .wrapperLi,
-    .wrapperA, .wrapperE, .wrapperCse,
-    .wrapperPersonal, .wrapper2 {
+    /* Kill ALL fixed heights that cause overflow */
+    .wrapperH, .wrapper, .wrapper3, .wrapper5,
+    .wrapperLi, .wrapperA, .wrapperE, .wrapperCse,
+    .wrapperPersonal, .divA1, .divA2,
+    .divHO, .divHOU, .divR, .divRU,
+    .divSMI, .divSM {
         height: auto !important;
-        display: block !important;
     }
 
-    /* Header text spacing */
-    .div1H .text,
-    .divA1 .text {
-        margin-top: 8% !important;
-        padding: 16px;
+    /* Fix background-attachment on mobile */
+    .div2H, .div2, .divSMI,
+    .divHO, .divHOU, .divR, .divRU {
+        background-attachment: scroll !important;
+        background-position: center !important;
     }
 
-    /* Reduce very large titles */
-    .div1H .text h1,
-    .divA1 .text h1 {
-        font-size: 36px !important;
+    /* Fix pirates text block specifically */
+    .div6 {
+        height: auto !important;
+        padding-bottom: 20px !important;
     }
 
-    /* General heading resizing */
-    h1 {
-        font-size: 32px !important;
-        padding-left: 0 !important;
+    /* General text resizing */
+    .text {
+        padding: 18px !important;
+        margin: 0 !important;
     }
 
-    h2 {
-        font-size: 26px !important;
-        padding-left: 0 !important;
+    .text h1, h1 {
+        font-size: 28px !important;
     }
 
-    h3 {
-        padding-left: 0 !important;
-    }
-
-    p, li {
+    .text p, p, li {
         font-size: 20px !important;
         padding-left: 0 !important;
     }
 
-    /* Fix padding inside text blocks */
-    .text {
-        padding: 16px !important;
-        margin: 0 !important;
-    }
-
-    /* Page cards (Pirates / Novels in Progress) */
+    /* Page cards resize */
     .wrapper2 {
-        flex-direction: column;
+        flex-direction: column !important;
         height: auto !important;
-        gap: 20px;
+        gap: 18px !important;
     }
 
     .box2 {
         width: 90% !important;
-        height: 180px !important;
-        margin: 8px auto;
+        height: 160px !important;
     }
 
-    /* Social media section */
-    .divSM, .divSMI {
-        height: auto !important;
-    }
-
-    /* Artwork Tables: enable scrolling */
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    table img {
-        width: 220px !important;
-        height: 220px !important;
-    }
-
-    /* Prevent giant image expansion on tap */
-    table img:active {
-        width: 220px !important;
-        height: 220px !important;
-    }
-
-    /* Video full width, prevent overflow */
-    video {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Navigation links shrink a bit */
-    a {
-        font-size: 22px !important;
-        padding: 10px !important;
-    }
-
-    a:hover {
-        font-size: 23px !important;
-    }
-
-    /* Centered text blocks */
+    /* Centered text box */
     .centertxt {
         width: 95% !important;
         padding: 20px !important;
     }
 
-    .centertxt p {
-        font-size: 22px !important;
+    /* Make tables scrollable horizontally */
+    table {
+        display: block !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
     }
 
-    /* Fix background images on mobile */
-    .div2H, .div2, .divSMI,
-    .divHO, .divHOU, .divR, .divRU {
-        background-attachment: scroll !important;
-        background-position: center !important;
+    table img {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    table img:active {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    /* Videos full width */
+    video {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Navigation links shrink */
+    a {
+        font-size: 20px !important;
+        padding: 10px !important;
     }
 }
