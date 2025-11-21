@@ -1102,3 +1102,41 @@ video {
         padding: 10px !important;
     }
 }
+
+/*NEW ONE*/
+
+/* Mobile-specific fixes */
+@media screen and (max-width: 768px) {
+  /* Make text bubbles full width and prevent overlapping */
+  .text-bubble {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Increase font size for readability */
+  body, p, h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em; /* adjust as needed */
+  }
+
+  /* Adjust spacing to prevent overlap */
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  /* Stack elements that are side by side on desktop */
+  .side-by-side {
+    display: block;
+    width: 100%;
+  }
+
+  /* Specific fix for Pirates page overlapping */
+  #pirates #check-it-out {
+    margin-bottom: 1.5rem;
+  }
+
+  /* General responsive image/text adjustments */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+}
