@@ -129,3 +129,31 @@ body {
     padding: 12px !important;
     overflow-x: hidden !important;
 }
+
+/* Make concept art images bigger on phones */
+.concept-art img,
+#concept-art img,
+.conceptart img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+    border-radius: 8px !important;
+}
+
+/* Fullscreen image viewer */
+#fullscreen-viewer {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+#fullscreen-viewer img {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+}
