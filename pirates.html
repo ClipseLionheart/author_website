@@ -52,10 +52,6 @@
 <br><br>
 <hr>
 <!--header ends-->
-<!-- Fullscreen image viewer -->
-<div id="fullscreen-viewer">
-  <img id="fullscreen-img" src="">
-</div>
 
 <!-- Fullscreen image viewer -->
 <div id="fullscreen-viewer" style="
@@ -65,7 +61,7 @@
     background:rgba(0,0,0,0.9);
     justify-content:center;
     align-items:center;
-    z-index:99999;">
+    z-index:999999;">
   <img id="fullscreen-img" src="" style="
       max-width:95%;
       max-height:95%;
@@ -73,20 +69,34 @@
 </div>
 
 <script>
-  // Make all images open fullscreen on tap (mobile only)
-  document.querySelectorAll('img').forEach(img => {
-      img.style.cursor = 'pointer';
-      img.addEventListener('click', () => {
-          document.getElementById('fullscreen-img').src = img.src;
-          document.getElementById('fullscreen-viewer').style.display = 'flex';
-      });
-  });
+document.addEventListener("DOMContentLoaded", function() {
 
-  // Close when tapping the background
-  document.getElementById('fullscreen-viewer').addEventListener('click', () => {
-      document.getElementById('fullscreen-viewer').style.display = 'none';
-  });
+    // Select ALL images only after the page is fully loaded
+    const imgs = document.querySelectorAll('img');
+
+    imgs.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+
+            // Set the fullscreen image's source
+            const viewer = document.getElementById('fullscreen-viewer');
+            const fsimg  = document.getElementById('fullscreen-img');
+
+            fsimg.src = this.src;
+
+            // SHOW fullscreen viewer
+            viewer.style.display = 'flex';
+        });
+    });
+
+    // Clicking anywhere closes fullscreen
+    document.getElementById('fullscreen-viewer').addEventListener('click', function() {
+        this.style.display = 'none';
+    });
+
+});
 </script>
+
 
 
     <body>
