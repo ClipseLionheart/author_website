@@ -1,0 +1,131 @@
+/* ================================
+   MOBILE-ONLY STYLESHEET  
+   (Triggers ONLY on screens ≤ 850px)
+   Desktop stays 100% untouched.
+================================ */
+
+/* Reset all floats to prevent overlapping */
+[class*="div"], 
+[class*="box"], 
+.wrapper, 
+.wrapperH, 
+.wrapper2, 
+.wrapper3, 
+.wrapper5, 
+.wrapperA, 
+.wrapperLi,
+.wrapperE,
+.wrapperCse,
+.wrapperPersonal {
+    float: none !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 0 22px 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Text bubble fix — forces full width */
+.text,
+.div1 .text,
+.div6 .text,
+.divSM .text,
+.div5 .text,
+.centertxt {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 18px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Larger readable text (matches preview look) */
+h1 {
+    font-size: 34px !important;
+}
+h2 {
+    font-size: 30px !important;
+}
+h3 {
+    font-size: 26px !important;
+}
+p, li {
+    font-size: 22px !important;
+    line-height: 1.45em !important;
+    padding-left: 0 !important;
+}
+
+/* Fix any fixed-height sections that cause overlap */
+.div1H, .div2H,
+.div1, .div2,
+.divSM, .divSMI,
+.div6,
+.divHO, .divHOU,
+.divR, .divRU {
+    height: auto !important;
+    min-height: auto !important;
+}
+
+/* Fix background-attachment on mobile (prevents clipping) */
+.div2H, .div2, .divSMI, .divHO, .divHOU, .divR, .divRU {
+    background-attachment: scroll !important;
+    background-position: center !important;
+}
+
+/* Phones must stack the “Pages” section vertically */
+.wrapper2 {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    height: auto !important;
+}
+
+.box2 {
+    width: 95% !important;
+    height: 180px !important;
+}
+
+/* Prevent Pirates page overlapping */
+.div6 {
+    padding-bottom: 22px !important;
+}
+.div6 .text {
+    margin-bottom: 18px !important;
+}
+.centertxt {
+    margin-top: 30px !important;
+}
+
+/* Ensure images & videos scale properly */
+img, video {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Tables become horizontally scrollable */
+table {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+}
+table img {
+    width: 180px !important;
+    height: 180px !important;
+}
+
+/* Navigation links - readable size */
+a {
+    font-size: 22px !important;
+    padding: 10px !important;
+}
+
+/* Give the entire phone page breathing room */
+body {
+    padding: 12px !important;
+    overflow-x: hidden !important;
+}
