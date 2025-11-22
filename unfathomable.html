@@ -53,7 +53,7 @@
 <hr>
 <!--header ends-->
 
-<!-- Fullscreen image viewer -->
+<!-- Fullscreen image viewer - move -->
 <div id="fullscreen-viewer" style="
     display:none;
     position:fixed;
@@ -61,8 +61,7 @@
     background:rgba(0,0,0,0.95);
     justify-content:center;
     align-items:center;
-    z-index:2147483647;  /* max possible */
-    pointer-events:auto;">
+    z-index:2147483647;">
   <img id="fullscreen-img" src="" style="
       max-width:90%;
       max-height:90%;
@@ -71,37 +70,55 @@
 
 <script>
 window.addEventListener("load", function() {
+    const viewer = document.getElementById("fullscreen-viewer");
+    const fsimg  = document.getElementById("fullscreen-img");
+    const imgs   = Array.from(document.querySelectorAll("img"));
+    let index    = -1;
 
-    const viewer = document.getElementById('fullscreen-viewer');
-    const fsimg  = document.getElementById('fullscreen-img');
-
-    // Select every image on the page
-    const imgs = document.querySelectorAll('img');
-
-    imgs.forEach(img => {
-
-        // Force image to be clickable
-        img.style.pointerEvents = "auto";
+    // Make each image clickable
+    imgs.forEach((img, i) => {
         img.style.cursor = "pointer";
-
         img.addEventListener("click", () => {
-
-            // Set fullscreen image
+            index = i;
             fsimg.src = img.src;
-
-            // Show viewer
             viewer.style.display = "flex";
         });
     });
 
-    // Click anywhere to close fullscreen
-    viewer.addEventListener("click", () => {
+    // Close fullscreen
+    function closeViewer() {
         viewer.style.display = "none";
         fsimg.src = "";
-    });
+        index = -1;
+    }
 
+    // Show previous / next images
+    function showImage(n) {
+        if (n < 0 || n >= imgs.length) return;
+        index = n;
+        fsimg.src = imgs[index].src;
+    }
+
+    // Clicking outside image closes it
+    viewer.addEventListener("click", closeViewer);
+
+    // Keyboard controls
+    document.addEventListener("keydown", (e) => {
+        if (viewer.style.display !== "flex") return;
+
+        if (e.key === "Escape") {
+            closeViewer();
+        }
+        if (e.key === "ArrowLeft") {
+            showImage(index - 1);
+        }
+        if (e.key === "ArrowRight") {
+            showImage(index + 1);
+        }
+    });
 });
 </script>
+
 
 
 
