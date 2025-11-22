@@ -58,40 +58,46 @@
     display:none;
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,0.9);
+    background:rgba(0,0,0,0.95);
     justify-content:center;
     align-items:center;
-    z-index:999999;">
+    z-index:2147483647;  /* max possible */
+    pointer-events:auto;">
   <img id="fullscreen-img" src="" style="
-      max-width:95%;
-      max-height:95%;
-      border-radius:10px;">
+      max-width:90%;
+      max-height:90%;
+      border-radius:8px;">
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("load", function() {
 
-    // Select ALL images only after the page is fully loaded
+    const viewer = document.getElementById('fullscreen-viewer');
+    const fsimg  = document.getElementById('fullscreen-img');
+
+    // Select every image on the page
     const imgs = document.querySelectorAll('img');
 
     imgs.forEach(img => {
-        img.style.cursor = 'pointer';
-        img.addEventListener('click', function() {
 
-            // Set the fullscreen image's source
-            const viewer = document.getElementById('fullscreen-viewer');
-            const fsimg  = document.getElementById('fullscreen-img');
+        // Force image to be clickable
+        img.style.pointerEvents = "auto";
+        img.style.cursor = "pointer";
 
-            fsimg.src = this.src;
+        img.addEventListener("click", () => {
 
-            // SHOW fullscreen viewer
-            viewer.style.display = 'flex';
+            // Set fullscreen image
+            fsimg.src = img.src;
+
+            // Show viewer
+            viewer.style.display = "flex";
         });
     });
 
-    // Clicking anywhere closes fullscreen
-    document.getElementById('fullscreen-viewer').addEventListener('click', function() {
-        this.style.display = 'none';
+    // Click anywhere to close fullscreen
+    viewer.addEventListener("click", () => {
+        viewer.style.display = "none";
+        fsimg.src = "";
     });
 
 });
